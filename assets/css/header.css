@@ -1,0 +1,30 @@
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#icons {
+    cursor: pointer;
+    display: none;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#dark-light-mode:hover, .nav-item:hover {
+    border-bottom: 2px var(--nav-link-color) solid;
+    border-top: 2px var(--nav-link-color) solid;
+    padding: 3px;
+    transition: all ease-in-out 0.2s;
+}

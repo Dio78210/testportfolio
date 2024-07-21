@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <nav id="nav">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projets">Projets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Competences">Compétences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tarifs">Tarifs</a>
+            </li>
+            <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
+        </ul>
+        <div id="icons"></div>
+    </nav>
+
+    <header>
+        
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Après 10 ans dans le transport et la logistique, je voulais changer et apprendre un métier ou je ne m'ennuierais pas. À la fin de ces 10 ans, j'étais dans un atelier reprographie où je m'occupais du paramétrage réseau des clients. Je me suis donc intéressé au web et après quelques mois de recherche et un stage de quelques jours en entreprise, je me suis réorienté vers le Développement web. J'ai obtenu mon diplôme Bac +2 développeurs Web et Web mobile en 2023. Et je continue toujours à apprendre de ce métier si passionnant.</p>
+    </header>
+    
+    <main>
+        <!-- <h2>Mes Projets premier exemple</h2>
+        <section id="projets">
+
+            <div class="projet card" onclick="afficherPopup('Projet 1', 'Description du projet 1')">
+                <img src="img_adhérent.webp" alt="Description de l'image 1" class="projet-image">
+                <h3>Projet 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="projet card" onclick="afficherPopup('Projet 2', 'Description du projet 2')">
+                <img src="img_adhérent.webp" alt="Description de l'image 2" class="projet-image">
+                <h3>Projet 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="projet card" onclick="afficherPopup('Projet 3', 'Description du projet 3')">
+                <img src="img_adhérent.webp" alt="Description de l'image 3" class="projet-image">
+                <h3>Projet 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="projet card" onclick="afficherPopup('Projet 4', 'Description du projet 4')">
+                <img src="img_adhérent.webp" alt="Description de l'image 4" class="projet-image">
+                <h3>Projet 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="projet card" onclick="afficherPopup('Projet 5', 'Description du projet 5')">
+                <img src="img_adhérent.webp" alt="Description de l'image 5" class="projet-image">
+                <h3>Projet 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </section> -->
+            <h2>Mes projets</h2>
+
+            <section id="projets">
+                <div class="card" onclick="afficherPopup('Projet 1', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/Blog-La-Manu.png" alt="Projet 1">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 1</b></h4>
+                        <p>Description du projet 1</p>
+                        <p class="description" style="display: none;">Description complète du projet 1</p>
+                    </div>
+                </div>
+                <div class="card" onclick="afficherPopup('Projet 2', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/connexion_Hopital.jpg" alt="Projet 2">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 2</b></h4>
+                        <p>Description du projet 2</p>
+                        <p class="description" style="display: none;">Description complète du projet 2</p>
+                    </div>
+                </div>
+                <div class="card" onclick="afficherPopup('Projet 3', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/Gamer Zone.png" alt="Projet 3">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 3</b></h4>
+                        <p>Description du projet 3</p>
+                        <p class="description" style="display: none;">Description complète du projet 3</p>
+                    </div>
+                </div>
+                <div class="card" onclick="afficherPopup('Projet 4', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/Screenshot 2023-07-01 at 12-58-52 Admin.png" alt="Projet 4">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 4</b></h4>
+                        <p>Description du projet 4</p>
+                        <p class="description" style="display: none;">Description complète du projet 4</p>
+                    </div>
+                </div>
+                <div class="card" onclick="afficherPopup('Projet 5', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/img_adhérent.webp" alt="Projet 5">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 5</b></h4>
+                        <p>Description du projet 5</p>
+                        <p class="description" style="display: none;">Description complète du projet 5</p>
+                    </div>
+                </div>
+                <div class="card" onclick="afficherPopup('Projet 6', this.querySelector('.description').innerText)">
+                    <div class="image-container">
+                        <img src="/assets/img/img_adhérent.webp" alt="Projet 6">
+                    </div>
+                    <div class="container">
+                        <h4><b>Projet 6</b></h4>
+                        <p>Description du projet 6</p>
+                        <p class="description" style="display: none;">Description complète du projet 6</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+
+
+            <div id="popup" class="popup-cache">
+                <div class="popup-contenu">
+                    <span class="popup-fermer" onclick="fermerPopup()">&times;</span>
+                    <h2 id="popup-titre"></h2>
+                    <p id="popup-description"></p>
+                </div>
+            </div>
+            
+            
+
+
+            <section id="competences">
+                <h2>Mes Compétences</h2>
+                <div class="competence-grid">
+                    <div class="competence-item">
+                        <img src="/assets/logo/html-5-svgrepo-com (1).svg" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/css-3-svgrepo-com.svg" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/javascript-svgrepo-com.svg" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/twig.webp" alt="Twig">
+                        <p>Twig</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/php-svgrepo-com.svg" alt="PHP">
+                        <p>PHP</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/mysql-logo-svgrepo-com.svg" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/symfony-svgrepo-com.svg" alt="Symfony">
+                        <p>Symfony</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/bootstrap-svgrepo-com.svg" alt="Bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/wordpress-color-svgrepo-com.svg" alt="Wordpress">
+                        <p>Wordpress</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/github-color-svgrepo-com.svg" alt="Git/Github">
+                        <p>Git/Github</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/figma-svgrepo-com.svg" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+                    <div class="competence-item">
+                        <img src="/assets/logo/visual-studio-code-svgrepo-com.svg" alt="Visual Studio Code">
+                        <p>Visual Studio Code</p>
+                    </div>
+                </div>
+            </section>
+
+        <section id="tarifs">
+            <h2>Mes Tarifs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero bibendum tincidunt.
+            </p>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <hr>
+        <div class="img">
+            <img src="img/logoDM.webp" width="80" height="80" alt="logo DM">
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-xs-12">
+                    <h2>Adresse</h2>
+                    <ul class="adress text-center">
+                        <li>
+                            <p><i class="bi bi-house-door-fill"></i>Saint Cyr l'Ecole</p>
+                            <p>78210</p>
+                        </li>
+                    
+                    </ul>
+                </div>
+
+                <div class="col-md-4  col-xs-12">
+                    <h2>Contact</h2>
+                    <ul class="contact text-center">
+                        <li>
+                            <p><i class="bi bi-at"></i>Damienmezieres@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><i class="bi bi-telephone-fill"></i>0658159499</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <h2>Social</h2>
+                    <ul class="social text-center">
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/damien-mezieres-64132916b/"><i class="bi bi-linkedin"></i>Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Dio78210"><i class="bi bi-github"></i>Github</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copiryght">
+            <p>Damien Mézières copiryght 2023</p>
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
