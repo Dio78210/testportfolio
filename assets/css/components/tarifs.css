@@ -18,33 +18,6 @@
 }
 
 .tarif-item {
-    background: var(--secondary-background-color); /* Couleur de fond des éléments de tarifs */
-    border-radius: 10px; /* Bordure arrondie des éléments de tarifs */
-    padding: calc(var(--spacing-base) * 2); /* Padding des éléments de tarifs */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des éléments de tarifs */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour la transformation et l'ombre des éléments de tarifs */
-    text-align: center; /* Centre le texte des éléments de tarifs */
-    width: 150px; /* Largeur des éléments de tarifs */
-    flex: 1 1 calc(25% - 30px); /* Taille des éléments de tarifs */
-}
-
-.tarif-item img {
-    max-width: 80px; /* Largeur maximale des images des tarifs */
-    height: auto; /* Hauteur automatique pour garder les proportions */
-}
-
-.tarif-item p {
-    font-size: 1.2em; /* Taille de police des paragraphes des tarifs */
-    margin-top: var(--spacing-base); /* Marge supérieure des paragraphes des tarifs */
-    color: var(--secondary-text-color); /* Couleur du texte des paragraphes des tarifs */
-}
-
-.tarif-item:hover {
-    transform: translateY(-var(--spacing-base)); /* Transformation des éléments de tarifs au survol */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre des éléments de tarifs au survol */
-}
-
-.tarif-item {
     padding: 20px; /* Padding pour chaque élément de tarif */
     background-color: var(--secondary-background-color); /* Couleur de fond des éléments de tarif */
     border-radius: var(--border-radius); /* Bordure arrondie des éléments de tarif */
@@ -67,7 +40,8 @@
 .tarif-item p {
     margin-bottom: 10px; /* Marge inférieure pour le prix */
     font-weight: bold; /* Gras pour le prix */
-    color: var(--primary-text-color); /* Couleur du prix */
+    color: var(--primary-color); /* Couleur du prix */
+    font-size: 1.5em; /* Taille de police plus grande pour le prix */
 }
 
 .tarif-item ul {
