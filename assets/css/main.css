@@ -1,0 +1,9 @@
+@import url('/assets/css/variables.css'); /* Import des variables CSS */
+@import url('/assets/css/reset.css'); /* Import du reset CSS */
+@import url('/assets/css/base.css'); /* Import des styles de base */
+@import url('/assets/css/header.css'); /* Import des styles du header */
+@import url('/assets/css/nav.css'); /* Import des styles de la navigation */
+@import url('/assets/css/projets.css'); /* Import des styles des projets */
+@import url('/assets/css/competences.css'); /* Import des styles des compétences */
+@import url('/assets/css/tarifs.css'); /* Import des styles des tarifs */
+@import url('/assets/css/footer.css'); /* Import des styles du pied de page */

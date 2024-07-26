@@ -1,0 +1,64 @@
+footer {
+    padding: calc(var(--spacing-base) * 2); /* Padding du pied de page */
+    text-align: center; /* Centre le texte du pied de page */
+    background-color: var(--footer-background-color); /* Couleur de fond du pied de page */
+}
+
+footer ul {
+    padding: 0; /* Supprime le padding de la liste */
+}
+
+footer li {
+    display: flex; /* Utilise flexbox pour les éléments de liste */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+footer ul li {
+    padding: calc(var(--spacing-base) * 1) 0; /* Padding des éléments de liste */
+}
+
+.img {
+    display: flex; /* Utilise flexbox pour le conteneur d'images */
+    justify-content: center; /* Centre les éléments horizontalement */
+    padding-bottom: calc(var(--spacing-base) * 1); /* Padding inférieur pour le conteneur d'images */
+}
+
+#footer .img img {
+    border-radius: 150px; /* Bordures arrondies pour les images du pied de page */
+}
+
+.bi {
+    padding: calc(var(--spacing-base) * 1); /* Padding pour les icônes */
+    color: var(--primary-color); /* Couleur des icônes */
+}
+
+.adress li p,
+.contact li p,
+.social li a {
+    letter-spacing: 2px; /* Espacement des lettres pour les adresses, contacts et liens sociaux */
+    text-decoration: none; /* Supprime la décoration des liens */
+    font-size: 16px; /* Taille de police des adresses, contacts et liens sociaux */
+    font-weight: 600; /* Poids de police des adresses, contacts et liens sociaux */
+    display: flex; /* Utilise flexbox pour les adresses, contacts et liens sociaux */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    color: var(--primary-text-color); /* Couleur du texte des adresses, contacts et liens sociaux */
+}
+
+.adress,
+.contact,
+.social {
+    list-style: none; /* Supprime le style de liste pour les adresses, contacts et liens sociaux */
+}
+
+i {
+    color: var(--error-text-color); /* Couleur des icônes d'erreur */
+    font-size: 35px; /* Taille de police des icônes d'erreur */
+    font-weight: bold; /* Poids de police des icônes d'erreur */
+}
+
+.copiryght {
+    width: 100%; /* Largeur du conteneur de copyright */
+    display: flex; /* Utilise flexbox pour le conteneur de copyright */
+    justify-content: center; /* Centre le texte horizontalement */
+    color: var(--primary-text-color); /* Couleur du texte de copyright */
+}

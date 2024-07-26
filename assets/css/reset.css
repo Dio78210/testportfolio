@@ -1,0 +1,10 @@
+* {
+    margin: 0; /* Réinitialise les marges */
+    padding: 0; /* Réinitialise les paddings */
+    box-sizing: border-box; /* Définit le box-sizing à border-box pour inclure padding et bordure dans la largeur et hauteur */
+}
+
+:focus {
+    outline: 2px solid var(--primary-color); /* Bordure de focus pour les éléments */
+    outline-offset: 2px; /* Décalage de la bordure de focus */
+}

@@ -1,0 +1,20 @@
+header {
+    display: flex; /* Utilise flexbox pour le header */
+    align-items: center; /* Aligne les éléments du header au centre verticalement */
+    padding: calc(var(--spacing-base) * 2); /* Padding du header */
+    background-color: var(--hero-banner-background); /* Couleur de fond du header */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Ombre du header */
+    justify-content: space-evenly; /* Espace les éléments de manière égale */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+}
+
+.profile-photo {
+    width: 300px; /* Largeur de la photo de profil */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 50%; /* Bordures arrondies à 50% pour un cercle */
+    margin-right: calc(var(--spacing-base) * 2); /* Marge droite de la photo de profil */
+}
+
+.intro-text {
+    max-width: 600px; /* Largeur maximale du texte d'introduction */
+}

@@ -1,0 +1,93 @@
+#projets {
+    display: flex; /* Utilise flexbox pour la section projets */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: var(--primary-background-color); /* Couleur de fond de la section projets */
+    padding: calc(var(--spacing-base) * 2); /* Padding de la section projets */
+    gap: calc(var(--spacing-base) * 2); /* Espace entre les éléments de la section projets */
+}
+
+.card {
+    flex: 1 0 21%; /* Taille des cartes */
+    border: 1px solid var(--primary-color); /* Bordure des cartes */
+    border-radius: var(--border-radius); /* Bordure arrondie des cartes */
+    margin: var(--spacing-base); /* Marge des cartes */
+    cursor: pointer; /* Curseur pointeur pour les cartes */
+    display: flex; /* Utilise flexbox pour les cartes */
+    flex-direction: column; /* Utilise flexbox en colonne pour les cartes */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des cartes */
+    background-color: var(--secondary-background-color); /* Couleur de fond des cartes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour la transformation et l'ombre des cartes */
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-var(--spacing-base)); /* Transformation des cartes au survol et focus */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre des cartes au survol et focus */
+}
+
+.image-container {
+    width: 100%; /* Largeur du conteneur d'image */
+    padding-top: 56.25%; /* Padding top pour maintenir le ratio */
+    position: relative; /* Position relative pour l'image */
+    overflow: hidden; /* Cache le débordement de l'image */
+    border-radius: var(--border-radius); /* Bordure arrondie du conteneur d'image */
+}
+
+.image-container img {
+    position: absolute; /* Position absolue pour l'image */
+    top: 0; /* Position en haut du conteneur */
+    left: 0; /* Position à gauche du conteneur */
+    width: 100%; /* Largeur de l'image */
+    height: 100%; /* Hauteur de l'image */
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur */
+}
+
+.container {
+    padding: var(--spacing-base); /* Padding du conteneur */
+}
+
+.container h4, 
+.container p {
+    margin: var(--spacing-base); /* Marge pour les titres et paragraphes du conteneur */
+    font-size: 1em; /* Taille de police des titres et paragraphes */
+    color: var(--secondary-text-color); /* Couleur du texte des titres et paragraphes */
+}
+
+.popup-cache {
+    display: none; /* Cache la popup par défaut */
+    position: fixed; /* Position fixe pour la popup */
+    z-index: 1; /* Niveau de superposition pour la popup */
+    left: 0; /* Position à gauche de la fenêtre */
+    top: 0; /* Position en haut de la fenêtre */
+    width: 100%; /* Largeur de la popup */
+    height: 100%; /* Hauteur de la popup */
+    overflow: auto; /* Défilement automatique pour la popup */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente pour la popup */
+}
+
+.popup-contenu {
+    background-color: var(--secondary-color); /* Couleur de fond de la popup */
+    margin: 15% auto; /* Marge automatique pour centrer la popup */
+    padding: calc(var(--spacing-base) * 2); /* Padding de la popup */
+    border: 1px solid var(--primary-color); /* Bordure de la popup */
+    width: 80%; /* Largeur de la popup */
+    color: var(--primary-text-color); /* Couleur du texte de la popup */
+    border-radius: var(--border-radius); /* Bordure arrondie de la popup */
+}
+
+.popup-fermer {
+    color: #aaa; /* Couleur du bouton de fermeture */
+    float: right; /* Flotte à droite */
+    font-size: 28px; /* Taille de police du bouton de fermeture */
+    font-weight: bold; /* Poids de police du bouton de fermeture */
+}
+
+.popup-fermer:hover,
+.popup-fermer:focus {
+    color: var(--primary-color); /* Couleur du bouton de fermeture au survol et focus */
+    text-decoration: none; /* Supprime la décoration du texte */
+    cursor: pointer; /* Curseur pointeur pour le bouton de fermeture */
+}

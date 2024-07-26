@@ -1,0 +1,116 @@
+nav {
+    display: flex; /* Utilise flexbox pour la navigation */
+    justify-content: space-between; /* Espace les éléments de manière égale */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    padding: calc(var(--spacing-base) * 2) calc(var(--spacing-base) * 4); /* Padding de la navigation */
+    background-color: var(--primary-background-color); /* Couleur de fond de la navigation */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Ombre de la navigation */
+}
+
+#nav .img img {
+    border-radius: 150px; /* Bordures arrondies pour les images dans la nav */
+}
+
+#nav-list {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding de la liste */
+    display: flex; /* Utilise flexbox pour la liste de navigation */
+    justify-content: space-around; /* Espace les éléments de manière égale */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    width: 100%; /* Largeur complète de la liste */
+}
+
+.nav-item {
+    margin: 0 var(--spacing-base); /* Marge horizontale pour les éléments de la liste */
+}
+
+.burger-icon {
+    display: none; /* Cache l'icône burger par défaut */
+    flex-direction: column; /* Utilise flexbox en colonne */
+    cursor: pointer; /* Curseur pointeur pour l'icône burger */
+    gap: 5px; /* Espace entre les lignes de l'icône burger */
+}
+
+.burger-icon span {
+    display: block; /* Affiche les lignes de l'icône burger */
+    width: 25px; /* Largeur des lignes */
+    height: 3px; /* Hauteur des lignes */
+    background-color: var(--primary-text-color); /* Couleur de fond des lignes */
+    transition: all 0.3s; /* Transition pour les lignes */
+}
+
+.nav-link,
+#dark-light-mode {
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: var(--link-text-color); /* Couleur du texte des liens */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transition pour la couleur et la bordure des liens */
+    padding: calc(var(--spacing-base) / 2); /* Padding des liens */
+}
+
+.nav-link:hover,
+.nav-link:focus,
+#dark-light-mode:hover,
+#dark-light-mode:focus {
+    color: var(--link-hover-text-color); /* Couleur des liens au survol et focus */
+    border-bottom: 2px var(--link-hover-text-color) solid; /* Bordure inférieure des liens au survol et focus */
+    padding-bottom: calc(var(--spacing-base) / 2); /* Padding inférieur des liens au survol et focus */
+}
+
+
+/* Styles pour rendre la nav-bar responsive */
+@media (max-width: 920px) {
+    .nav-logo {
+        width: 40px;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    #nav-list {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-item {
+        margin: var(--spacing-base);
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    nav.active #nav-list {
+        display: flex;
+    }
+
+    .burger-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .burger-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: var(--spacing-base);
+    }
+
+    .nav-logo {
+        width: 30px;
+    }
+
+    .logo h1 {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,91 @@
+#tarifs {
+    text-align: center; /* Centre le texte de la section tarifs */
+    padding: 50px 20px; /* Padding de la section tarifs */
+    background-color: var(--primary-background-color); /* Couleur de fond de la section tarifs */
+}
+
+#tarifs h2 {
+    font-size: 2.5em; /* Taille de police des titres de la section tarifs */
+    margin-bottom: 20px; /* Marge inférieure des titres de la section tarifs */
+    color: var(--primary-color); /* Couleur des titres de la section tarifs */
+}
+
+.tarif-grid {
+    display: flex; /* Utilise flexbox pour la grille de tarifs */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 30px; /* Espace entre les éléments de la grille de tarifs */
+}
+
+.tarif-item {
+    background: var(--secondary-background-color); /* Couleur de fond des éléments de tarifs */
+    border-radius: 10px; /* Bordure arrondie des éléments de tarifs */
+    padding: calc(var(--spacing-base) * 2); /* Padding des éléments de tarifs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des éléments de tarifs */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour la transformation et l'ombre des éléments de tarifs */
+    text-align: center; /* Centre le texte des éléments de tarifs */
+    width: 150px; /* Largeur des éléments de tarifs */
+    flex: 1 1 calc(25% - 30px); /* Taille des éléments de tarifs */
+}
+
+.tarif-item img {
+    max-width: 80px; /* Largeur maximale des images des tarifs */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
+
+.tarif-item p {
+    font-size: 1.2em; /* Taille de police des paragraphes des tarifs */
+    margin-top: var(--spacing-base); /* Marge supérieure des paragraphes des tarifs */
+    color: var(--secondary-text-color); /* Couleur du texte des paragraphes des tarifs */
+}
+
+.tarif-item:hover {
+    transform: translateY(-var(--spacing-base)); /* Transformation des éléments de tarifs au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre des éléments de tarifs au survol */
+}
+
+.tarif-item {
+    padding: 20px; /* Padding pour chaque élément de tarif */
+    background-color: var(--secondary-background-color); /* Couleur de fond des éléments de tarif */
+    border-radius: var(--border-radius); /* Bordure arrondie des éléments de tarif */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des éléments de tarif */
+    margin: 20px; /* Marge pour séparer les éléments de tarif */
+    flex: 1 1 calc(25% - 40px); /* Taille des éléments de tarif */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'animation des éléments de tarif */
+}
+
+.tarif-item:hover {
+    transform: translateY(-10px); /* Déplace l'élément vers le haut au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmente l'ombre au survol */
+}
+
+.tarif-item h3 {
+    margin-bottom: 10px; /* Marge inférieure pour le titre de tarif */
+    color: var(--primary-color); /* Couleur du titre de tarif */
+}
+
+.tarif-item p {
+    margin-bottom: 10px; /* Marge inférieure pour le prix */
+    font-weight: bold; /* Gras pour le prix */
+    color: var(--primary-text-color); /* Couleur du prix */
+}
+
+.tarif-item ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding de la liste */
+    color: var(--secondary-text-color); /* Couleur des éléments de la liste */
+}
+
+.tarif-item ul li {
+    margin-bottom: 10px; /* Marge inférieure pour les éléments de la liste */
+    padding-left: 20px; /* Padding à gauche pour les éléments de la liste */
+    position: relative; /* Position relative pour ajouter une icône */
+}
+
+.tarif-item ul li:before {
+    content: '✔'; /* Icône avant chaque élément */
+    position: absolute; /* Position absolue de l'icône */
+    left: 0; /* Position à gauche de l'élément */
+    color: var(--primary-color); /* Couleur de l'icône */
+    font-weight: bold; /* Gras pour l'icône */
+}

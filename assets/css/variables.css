@@ -1,0 +1,18 @@
+:root {
+    --primary-text-color: #eee; /* Couleur principale du texte */
+    --secondary-text-color: #121212; /* Couleur secondaire du texte */
+    --primary-background-color: #1b1b1b; /* Couleur de fond principale */
+    --secondary-background-color: #fff; /* Couleur de fond secondaire */
+    --tertiary-background-color: #2a2a2a; /* Couleur de fond tertiaire */
+    --link-text-color: #00b0e7; /* Couleur du texte des liens */
+    --link-hover-text-color: #004f68; /* Couleur du texte des liens au survol */
+    --error-text-color: #ff5050; /* Couleur du texte des erreurs */
+    --primary-color: #00b0e7; /* Couleur principale */
+    --secondary-color: #004f68; /* Couleur secondaire */
+    --footer-background-color: #002835; /* Couleur de fond du pied de page */
+    --contactez-moi-background-color: #006281; /* Couleur de fond pour la section contactez-moi */
+    --hero-banner-background: rgba(27, 27, 27, .8); /* Couleur de fond pour le banner héros */
+    --font-size-base: 16px; /* Taille de police de base */
+    --spacing-base: 10px; /* Espace de base pour les marges et les paddings */
+    --border-radius: 8px; /* Rayon de bordure par défaut */
+}

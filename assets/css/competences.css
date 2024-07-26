@@ -1,0 +1,45 @@
+#competences {
+    text-align: center; /* Centre le texte de la section compétences */
+    padding: 50px 20px; /* Padding de la section compétences */
+    background-color: var(--primary-background-color); /* Couleur de fond de la section compétences */
+}
+
+#competences h2 {
+    font-size: 2.5em; /* Taille de police des titres de la section compétences */
+    margin-bottom: 20px; /* Marge inférieure des titres de la section compétences */
+    color: var(--primary-color); /* Couleur des titres de la section compétences */
+}
+
+.competence-grid {
+    display: flex; /* Utilise flexbox pour la grille de compétences */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 30px; /* Espace entre les éléments de la grille de compétences */
+}
+
+.competence-item {
+    background: var(--secondary-background-color); /* Couleur de fond des éléments de compétences */
+    border-radius: 10px; /* Bordure arrondie des éléments de compétences */
+    padding: calc(var(--spacing-base) * 2); /* Padding des éléments de compétences */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des éléments de compétences */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour la transformation et l'ombre des éléments de compétences */
+    text-align: center; /* Centre le texte des éléments de compétences */
+    width: 150px; /* Largeur des éléments de compétences */
+    flex: 1 1 calc(25% - 30px); /* Taille des éléments de compétences */
+}
+
+.competence-item img {
+    max-width: 80px; /* Largeur maximale des images des compétences */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
+
+.competence-item p {
+    font-size: 1.2em; /* Taille de police des paragraphes des compétences */
+    margin-top: var(--spacing-base); /* Marge supérieure des paragraphes des compétences */
+    color: var(--secondary-text-color); /* Couleur du texte des paragraphes des compétences */
+}
+
+.competence-item:hover {
+    transform: translateY(-var(--spacing-base)); /* Transformation des éléments de compétences au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre des éléments de compétences au survol */
+}
