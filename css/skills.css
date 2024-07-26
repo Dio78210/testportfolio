@@ -7,7 +7,7 @@
 #competences h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--primary-color);
 }
 
 .competence-grid {
@@ -36,7 +36,7 @@
 .competence-item p {
     font-size: 1.2em;
     margin-top: 10px;
-    color: #555;
+    color: var(--text-color);
 }
 
 .competence-item:hover {
