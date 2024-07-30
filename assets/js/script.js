@@ -98,3 +98,10 @@ links.forEach((link) => {
 //   }
 // }
 // typewriter();
+
+
+document.querySelectorAll('.competence-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.querySelector('.competence-inner').classList.toggle('is-flipped');
+    });
+});

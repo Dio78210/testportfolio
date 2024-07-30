@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logoDM.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -107,7 +108,7 @@
                     <p class="description" style="display: none;">Description complète du projet 4</p>
                 </div>
             </div>
-            <div class="card" onclick="afficherPopup('Projet 5', this.querySelector('.description').innerText)">
+            <!-- <div class="card" onclick="afficherPopup('Projet 5', this.querySelector('.description').innerText)">
                 <div class="image-container">
                     <img src="./img/img_adhérent.webp" alt="Projet 5">
                 </div>
@@ -142,7 +143,7 @@
                     <h4><b>Projet 6</b></h4>
                     <p class="description" style="display: none;">Description complète du projet 6</p>
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
@@ -163,106 +164,251 @@
 
         <section id="competences">
             <h2>Mes Compétences</h2>
-            <div class="competence-grid">
-                <div class="competence-item">
-                    <img src="./logo/html-5-svgrepo-com.svg" alt="HTML">
-                    <p>HTML</p>
+            <div class="competence-container">
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/html-5-svgrepo-com.svg" alt="HTML">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>HTML</h3>
+                            <p>Langage de balisage pour la création de pages web.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/css-3-svgrepo-com.svg" alt="CSS">
-                    <p>CSS</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/css-3-svgrepo-com.svg" alt="CSS">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>CSS</h3>
+                            <p>Feuilles de style pour la présentation des documents HTML.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/javascript-svgrepo-com.svg" alt="JavaScript">
-                    <p>JavaScript</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/javascript-svgrepo-com.svg" alt="JavaScript">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>JavaScript</h3>
+                            <p>Langage de programmation pour des fonctionnalités web dynamiques.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/twig.webp" alt="Twig">
-                    <p>Twig</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/twig.webp" alt="Twig">
+                            <h3>Twig</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Twig</h3>
+                            <p>Moteur de templates pour PHP.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/php-svgrepo-com.svg" alt="PHP">
-                    <p>PHP</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/php-svgrepo-com.svg" alt="PHP">
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>PHP</h3>
+                            <p>Langage de script pour le développement web côté serveur.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/mysql-logo-svgrepo-com.svg" alt="MySQL">
-                    <p>MySQL</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/mysql-logo-svgrepo-com.svg" alt="MySQL">
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>MySQL</h3>
+                            <p>Système de gestion de base de données relationnelle.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/symfony-svgrepo-com.svg" alt="Symfony">
-                    <p>Symfony</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/symfony-svgrepo-com.svg" alt="Symfony">
+                            <h3>Symfony</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Symfony</h3>
+                            <p>Framework PHP pour les applications web.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/bootstrap-svgrepo-com.svg" alt="Bootstrap">
-                    <p>Bootstrap</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/bootstrap-svgrepo-com.svg" alt="Bootstrap">
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Bootstrap</h3>
+                            <p>Framework CSS pour le développement web réactif.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/wordpress-color-svgrepo-com.svg" alt="Wordpress">
-                    <p>Wordpress</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/wordpress-color-svgrepo-com.svg" alt="Wordpress">
+                            <h3>Wordpress</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Wordpress</h3>
+                            <p>Système de gestion de contenu pour la création de sites web.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/github-color-svgrepo-com.svg" alt="Git/Github">
-                    <p>Git/Github</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/github-color-svgrepo-com.svg" alt="Git/Github">
+                            <h3>Git/Github</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Git/Github</h3>
+                            <p>Gestion de version et collaboration sur le code source.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/figma-svgrepo-com.svg" alt="Figma">
-                    <p>Figma</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/figma-svgrepo-com.svg" alt="Figma">
+                            <h3>Figma</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Figma</h3>
+                            <p>Outil de conception d'interface utilisateur basé sur le web.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-item">
-                    <img src="./logo/visual-studio-code-svgrepo-com.svg" alt="Visual Studio Code">
-                    <p>VS Code</p>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/visual-studio-code-svgrepo-com.svg" alt="Visual Studio Code">
+                            <h3>VS Code</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>VS Code</h3>
+                            <p>Éditeur de code source pour le développement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/NetBeans.png" alt="NetBeans IDE">
+                            <h3>NetBeans IDE</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>NetBeans IDE</h3>
+                            <p>Environnement de développement intégré pour Java.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/java-logo-svgrepo-com.svg" alt="Java">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Java</h3>
+                            <p>Langage de programmation orienté objet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <div class="competence-inner">
+                        <div class="competence-front">
+                            <img src="./logo/eclipse-icon-svgrepo-com.svg" alt="Eclipse">
+                            <h3>Eclipse</h3>
+                        </div>
+                        <div class="competence-back">
+                            <h3>Eclipse</h3>
+                            <p>Environnement de développement intégré pour Java et autres langages.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        
+        
+        
+        
 
         <section id="tarifs">
             <h2>Mes Tarifs</h2>
             <div class="tarif-grid">
                 <div class="tarif-item">
                     <h3>Tarif de base</h3>
-                    <p>Prix: 500€</p>
+                    <p>Prix à partir de: 500€</p>
                     <ul>
                         <li>Création d'un site web simple (jusqu'à 5 pages)</li>
+                        <li>Création d'une partie 'Administration' pour la gestion du site web (image et texte)</li>
                         <li>Design réactif adapté aux mobiles</li>
                         <li>Intégration de contenu fourni par le client</li>
-                        <li>Formulaire de contact</li>
+                        <li>Formulaire de contact (si besoin)</li>
                         <li>Optimisation SEO de base</li>
                     </ul>
                 </div>
                 <div class="tarif-item">
                     <h3>Tarif intermédiaire</h3>
-                    <p>Prix: 1000€</p>
+                    <p>Prix à partir de: 1000€</p>
                     <ul>
                         <li>Tout ce qui est inclus dans le tarif de base</li>
                         <li>Création d'un site web plus complexe (jusqu'à 10 pages)</li>
                         <li>Personnalisation du design avec un thème choisi par le client</li>
                         <li>Intégration de fonctionnalités avancées (galerie photo, blog)</li>
                         <li>Formation de base pour la gestion de contenu</li>
-                        <li>Mise en place de Google Analytics</li>
                     </ul>
                 </div>
                 <div class="tarif-item">
                     <h3>Tarif avancé</h3>
-                    <p>Prix: 1500€</p>
+                    <p>Prix à partir de: 1500€</p>
                     <ul>
                         <li>Tout ce qui est inclus dans le tarif intermédiaire</li>
                         <li>Création d'un site web e-commerce (jusqu'à 20 produits)</li>
                         <li>Intégration de système de paiement sécurisé</li>
                         <li>Optimisation SEO avancée</li>
                         <li>Support technique pendant 3 mois</li>
-                        <li>Mise en place de campagnes de marketing par e-mail</li>
                     </ul>
                 </div>
                 <div class="tarif-item">
                     <h3>Tarif premium</h3>
-                    <p>Prix: 2500€</p>
+                    <p>Prix à partir de: 2500€</p>
                     <ul>
                         <li>Tout ce qui est inclus dans le tarif avancé</li>
                         <li>Développement d'applications web sur mesure</li>
                         <li>Création de fonctionnalités personnalisées (forums, systèmes de réservation)</li>
                         <li>Support technique pendant 6 mois</li>
-                        <li>Maintenance et mises à jour du site</li>
-                        <li>Consultation et stratégie digitale</li>
+                        <li>Maintenance et mises à jour du site pendant 6 mois</li>
+                    </ul>
+                </div>
+                <div class="tarif-item">
+                    <h3>Tarif supplément</h3>
+                    <p>Avec ou sans la création de site web</p>
+                    <ul>
+                        <li>Domaine + hébergement pendant 12 mois (<strong>OBLIGATOIRE</strong> pour être sur le web)</li>
+                        <li>Support techniques <strong>40€</strong>/ mois</li>
+                        <li>Maintenance et mises à jour du site <strong>50€</strong>/ mois</li>
+                        <li>Support techniques <strong>400€</strong>/ ans</li>
+                        <li>Maintenance et mises à jour du site <strong>500€</strong>/ ans</li>
                     </ul>
                 </div>
             </div>

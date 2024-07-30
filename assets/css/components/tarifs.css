@@ -63,3 +63,8 @@
     color: var(--primary-color); /* Couleur de l'icône */
     font-weight: bold; /* Gras pour l'icône */
 }
+
+
+.tarif-item strong{
+    color: var(--primary-color);
+}
