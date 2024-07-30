@@ -5,6 +5,7 @@ nav {
     padding: calc(var(--spacing-base) * 2) calc(var(--spacing-base) * 4); /* Padding de la navigation */
     background-color: var(--primary-background-color); /* Couleur de fond de la navigation */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Ombre de la navigation */
+
 }
 
 #nav .img img {
