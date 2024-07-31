@@ -22,6 +22,22 @@
     height: 200px;
     perspective: 1000px;
     margin: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competence-card:hover,
+.competence-card:focus {
+    transform: translateY(-var(--spacing-base));
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .competence-inner {
@@ -39,7 +55,7 @@
 .competence-front, .competence-back {
     backface-visibility: hidden;
     background: var(--secondary-background-color);
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -75,4 +91,31 @@
     color: var(--secondary-text-color);
 }
 
+/* Media Queries */
+@media (max-width: 1200px) and (min-width: 1041px) {
+    .competence-card {
+        flex: 1 0 21%; /* 4 cards per row */
+    }
+}
 
+@media (max-width: 1040px) and (min-width: 701px) {
+    .competence-card {
+        flex: 1 0 28%; /* 3 cards per row */
+    }
+}
+
+@media (max-width: 700px) and (min-width: 301px) {
+    .competence-card {
+        flex: 1 0 45%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 300px) {
+    .competence-card {
+        flex: 1 0 90%; /* 1 card per row on very small screens */
+    }
+
+    .competence-front img {
+        max-width: 70px;
+    }
+}
