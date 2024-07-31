@@ -102,6 +102,11 @@ links.forEach((link) => {
 
 document.querySelectorAll('.competence-card').forEach(card => {
     card.addEventListener('click', () => {
-        card.querySelector('.competence-inner').classList.toggle('is-flipped');
+        const innerCard = card.querySelector('.competence-inner');
+        if (innerCard.classList.contains('is-flipped')) {
+            innerCard.classList.remove('is-flipped');
+        } else {
+            innerCard.classList.add('is-flipped');
+        }
     });
 });
