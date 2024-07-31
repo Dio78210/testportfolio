@@ -99,14 +99,14 @@ links.forEach((link) => {
 // }
 // typewriter();
 
-
+//gestion de la rotation des cards de compétences
 document.querySelectorAll('.competence-card').forEach(card => {
-    card.addEventListener('click', () => {
-        const innerCard = card.querySelector('.competence-inner');
-        if (innerCard.classList.contains('is-flipped')) {
-            innerCard.classList.remove('is-flipped');
-        } else {
-            innerCard.classList.add('is-flipped');
-        }
-    });
+    const innerCard = card.querySelector('.competence-inner');
+
+    const toggleFlip = () => {
+        innerCard.classList.toggle('is-flipped');
+    };
+
+    card.addEventListener('click', toggleFlip);
+    card.addEventListener('touchend', toggleFlip);
 });
