@@ -7,3 +7,4 @@
 @import url('./components/competences.css'); /* Import des styles des compétences */
 @import url('./components/tarifs.css'); /* Import des styles des tarifs */
 @import url('./components/footer.css'); /* Import des styles du pied de page */
+@import url('./components/contact.css');/* Import des styles du formulaire de contact*/

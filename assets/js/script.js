@@ -110,3 +110,4 @@ document.querySelectorAll('.competence-card').forEach(card => {
     card.addEventListener('click', toggleFlip);
     card.addEventListener('touchend', toggleFlip);
 });
+
